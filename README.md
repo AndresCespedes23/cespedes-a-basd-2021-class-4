@@ -2,7 +2,7 @@
 
 ## Week 04
 
-- In this week I learned **Javascript** and how to use:
+- In this week I learned how to use ***Javascript's***:
     1. Variables and operators.
     2. Strings.
     3. Arrays.
@@ -11,4 +11,4 @@
     6. Functions.
 
 ###### Author
-Andrés Pablo Céspedes.
+_Andrés Pablo Céspedes_.
