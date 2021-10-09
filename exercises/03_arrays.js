@@ -17,4 +17,4 @@ console.log("3-e the answer is: " + months.reverse())
 console.log("3-f the answer is: " + months.join("-"))
 //g) Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
 var months1 = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
-console.log("3-g the answer is: " + months1.slice(4, 11))
+console.log("3-g the answer is: " + months1.slice(4, 11));
