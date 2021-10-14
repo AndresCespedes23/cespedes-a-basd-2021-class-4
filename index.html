@@ -11,8 +11,471 @@
     <script src="./exercises/04_if_else.js"></script>
     <script src="./exercises/05_for.js"></script>
     <script src="./exercises/06_functions.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-    
+    <div class="container-javascript">
+        <div class="ejercicio">
+            <p>Ejercicio 1</p>
+            <div class="consigna">
+                Consigna
+                <div>
+                    a) Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.
+                </div>
+                Codigo
+                <pre>
+                    var jordan = 23;
+
+                    var ronaldo = 7;
+
+                    var messi = jordan + ronaldo;
+
+                    console.log('1-a the answer is: ' + messi);
+                </pre>
+                Resultado
+                <div>
+                    1-a the answer is: 30
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    b) Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.
+                </div>
+                Codigo
+                <pre>
+                    var myName = 'andres ';
+
+                    var lastName = 'cespedes';
+
+                    var fullName = myName + lastName;
+
+                    console.log('1-b the answer is: ' + fullName);
+                </pre>
+                Resultado
+                <div>
+                    1-b the answer is: andres cespedes
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    c) Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el resultado de la suma en una 3er variable (utilizar length).
+                </div>
+                Codigo
+                <pre>
+                    var cristiano = 'ronaldo';
+
+                    var lionel = 'messi';
+
+                    var theBests = cristiano.length + lionel.length;
+
+                    console.log('1-c the answer is: ' + theBests);
+                </pre>
+                Resultado
+                <div>
+                    1-c the answer is: 12
+                </div>
+            </div>
+        </div>
+        <div class="ejercicio">
+            <p>Ejercicio 2</p>
+            <div class="consigna">
+                Consigna
+                <div>
+                    a) Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
+                </div>
+                Codigo
+                <pre>
+                    var string1 = 'schwarzenegger';
+
+                    console.log('2-a the answer is: ' +  string1.toUpperCase());
+                </pre>
+                Resultado
+                <div>
+                    2-a the answer is: SCHWARZENEGGER 
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    b) Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).
+                </div>
+                Codigo
+                <pre>
+                    var string2 = 'manchester';
+
+                    var resultb = string2.substring(0, 5);
+
+                    console.log('2-b the answer is: ' + resultb);
+                </pre>
+                Resultado
+                <div>
+                    2-b the answer is: manch
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    c) Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).
+                </div>
+                <pre>
+                    var string3 = 'bangladesh';
+
+                    var resultc = string3.substring(7, 10);
+
+                    console.log('2-c the answer is: ' + resultc);
+                </pre>
+                Resultado
+                <div>
+                    2-c the answer is: esh
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    d) Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
+                </div>
+                Codigo
+                <pre>
+                    var string4 = 'madagascar'
+
+                    var resultd = string4.substring(0, 1).toUpperCase() + string4.substring(1, 10).toLowerCase();
+
+                    console.log('2-d the answer is: ' + resultd);
+                </pre>
+                Resultado
+                <div>2-d the answer is: Madagascar</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    e) Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).
+                </div>
+                Codigo
+                <pre>
+                    var string5 = 'experienced representative';
+
+                    var resulte = string5.indexOf(' ');
+
+                    console.log('2-e the answer is: ' + resulte);
+                </pre>
+                Resultado
+                <div>2-e the answer is: 11</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    f) Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).
+                </div>
+                Codigo
+                <pre>
+                    var string6 = 'interesting location';
+
+                    var resultf = string6.substring(0, 1).toUpperCase() +
+                    string6.substring(1, 11).toLowerCase() + 
+                    string6.indexOf(' ') + 
+                    string6.substring(12, 13).toUpperCase() + 
+                    string6.substring(13, 22).toLowerCase();
+
+                    console.log('2-f the answer is: ' + resultf);
+
+                </pre>
+                Resultado
+                <div>2-f the answer is: Interesting11Location</div>
+            </div>
+        </div>
+        <div class="ejercicio">
+            <p>Ejercicio 3</p>
+            <div class="consigna">
+                Consigna
+                <div>
+                    a) Dado el siguiente array: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'] mostrar por consola los meses 5 y 11 (utilizar console.log).
+                </div>
+                Codigo
+                <pre>
+                    var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+
+                    console.log('3-a the answer is: ' + months[4] + ' and ' + months[10]);
+                </pre>
+                Resultado
+                <div>3-a the answer is: may and november</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    b) Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
+                </div>
+                Codigo
+                <pre>
+                    console.log('3-b the answer is: ' + months.sort());
+                </pre>
+                Resultado
+                <div>
+                    3-b the answer is: april,august,december,february,january,july,june,march,may,november,october,september
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    c) Agregar un elemento al principio y al final del array (utilizar unshift y push).
+                </div>
+                Codigo
+                <pre>
+                    months.unshift(3);
+
+                    months.push(4);
+
+                    console.log('3-c the answer is: ' + months);
+                </pre>
+                Resultado
+                <div>3-c the answer is: 3,april,august,december,february,january,july,june,march,may,november,october,september,4</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    d) Quitar un elemento del principio y del final del array (utilizar shift y pop).
+                </div>
+                Codigo
+                <pre>
+                    months.shift(3);
+
+                    months.pop(4);
+
+                    console.log('3-d the answer is: ' + months);
+                </pre>
+                Resultado
+                <div>3-d the answer is: april,august,december,february,january,july,june,march,may,november,october,september</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    e) Invertir el orden del array (utilizar reverse).
+                </div>
+                Codigo
+                <pre>
+                    console.log('3-e the answer is: ' + months.reverse());
+                </pre>
+                Resultado
+                <div>3-e the answer is: september,october,november,may,march,june,july,january,february,december,august,april</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    f) Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
+                </div>
+                Codigo
+                <pre>
+                    console.log('3-f the answer is: ' + months.join('-'));
+                </pre>
+                Resultado
+                <div>3-f the answer is: september-october-november-may-march-june-july-january-february-december-august-april</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    g) Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
+                </div>
+                Codigo
+                <pre>
+                    var months1 = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+
+                    console.log('3-g the answer is: ' + months1.slice(4, 11));
+                </pre>
+                Resultado
+                <div>3-g the answer is: may,june,july,august,september,october,november</div>
+            </div>
+        </div>
+        <div class="ejercicio">
+            <p>Ejercicio 4</p>
+            <div class="consigna">
+                Consigna
+                <div>
+                    a) Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”.
+                </div>
+                Codigo
+                <pre>
+                    if (Math.random() >= 0.5) {
+                        console.log('Greater than 0,5');
+                    } else {
+                        console.log('Lower than 0,5');
+                    }
+                </pre>
+                Resultado
+                <div>
+                    La respuestas cambia dependiendo el resultado (fijarse en la consola)
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div class="exercise4-b">
+                    <div>
+                        b) Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:
+                    </div>
+                    <div>i) “Bebe” si la edad es menor a 2 años;</div>
+                    <div>ii) “Nino” si la edad es entre 2 y 12 años;</div>
+                    <div>iii) “Adolescente” entre 13 y 19 años;</div>
+                    <div>iv) “Joven” entre 20 y 30 años;</div>
+                    <div>v) “Adulto” entre 31 y 60 años;</div>
+                    <div>vi) “Adulto mayor” entre 61 y 75 años;</div>
+                    <div>vii) “Anciano” si es mayor a 75 años.</div>
+                </div>
+                Codigo
+                <pre>
+                    var Age = 33;
+
+                    if (Age < 2) {
+                        console.log('baby') 
+                    } else if (Age > 2 && Age < 12) {
+                        console.log('kid')
+                    } else if (Age > 13 && Age < 19) {
+                        console.log('teenager')
+                    } else if (Age > 20 && Age < 30) {
+                        console.log('adult')
+                    } else if (Age > 31 && Age < 60) {
+                        console.log('mayor adult')
+                    } else if (Age > 75) {
+                        console.log('elder')
+                    }
+                </pre>
+                Resultado
+                <div>
+                    mayor adult
+                </div>
+            </div>
+        </div>
+        <div class="ejercicio">
+            <p>Ejercicio 5</p>
+            <div class="consigna">
+                Consigna
+                <div>
+                    a) Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.
+                </div>
+                Codigo
+                <pre>
+                    var fridge = ['milk', 'eggs', 'meat', 'yogurt', 'cheese'];
+
+                    for (i = 0; i < fridge.length; i++) {
+                        console.log('5-a the answer is: ' + fridge[i])
+                    }
+                </pre>
+                Resultado
+                <div class="array">
+                    <div>5-a the answer is: milk</div>
+                    <div>5-a the answer is: eggs</div>
+                    <div>5-a the answer is: meat</div>
+                    <div>5-a the answer is: yogurt</div>
+                    <div>5-a the answer is: cheese</div>
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    b) Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.
+                </div>
+                Codigo
+                <pre>
+                    for (i = 0; i < fridge.length; i++) {
+                        console.log('5-b the answer is: ' + fridge[i].substring(0, 1).toUpperCase() + fridge[i].substring(1))
+                    }
+                </pre>
+                Resultado
+                <div class="array">
+                    <div>5-a the answer is: Milk</div>
+                    <div>5-a the answer is: Eggs</div>
+                    <div>5-a the answer is: Meat</div>
+                    <div>5-a the answer is: Yogurt</div>
+                    <div>5-a the answer is: Cheese</div>
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    c) Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.
+                </div>
+                Codigo
+                <pre>
+                    var sentence = [];
+
+                    for (sentence of fridge) {
+                        console.log('5-c the answer is: ' + sentence)
+                    }
+                </pre>
+                Resultado
+                <div class="array">
+                    <div>5-c the answer is: milk</div>
+                    <div>5-c the answer is: eggs</div>
+                    <div>5-c the answer is: meat</div>
+                    <div>5-c the answer is: yogurt</div>
+                    <div>5-c the answer is: cheese</div>
+                </div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    d) Crear una array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición, es decir que al final de la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número 0 hasta al número 9. Mostrar por la consola del navegador el array final (utilizar console.log).
+                </div>
+               <pre>
+                var emptyArray = [];
+
+                for (i = 0; i < 10; i++) {
+                    for (emptyArray of [i]) {
+                        console.log('5-d the answer is: ' + emptyArray);
+                    }
+                }
+               </pre>
+                Resultado
+                <div class="array">
+                    <div>5-d the answer is: 0</div>
+                    <div>5-d the answer is: 1</div>
+                    <div>5-d the answer is: 2</div>
+                    <div>5-d the answer is: 3</div>
+                    <div>5-d the answer is: 4</div>
+                    <div>5-d the answer is: 5</div>
+                    <div>5-d the answer is: 6</div>
+                    <div>5-d the answer is: 7</div>
+                    <div>5-d the answer is: 8</div>
+                    <div>5-d the answer is: 9</div>
+                </div>
+        </div>
+        <div class="ejercicio">
+            <p>Ejercicio 6</p>
+            <div class="consigna">
+                Consigna
+                <div>
+                    a) Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar el resultado en una variable, mostrando el valor de dicha variable en la consola del navegador.
+                </div>
+                Codigo
+                <pre>
+                    function exercise1(a, b) {
+                        return a + b
+                    }
+
+                    var resultA = exercise1(5, 7);
+
+                    console.log('6-a the answer is: ' + resultA);
+                </pre>
+                Resultado
+                <div>6-a the answer is: 12</div>
+            </div>
+            <div class="consigna">
+                Consigna
+                <div>
+                    c) Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.
+                </div>
+                Codigo
+                <pre>
+                    function exercise3(z) {
+                        return Number.isInteger(z)
+                    }
+                    
+                    console.log('6-c the answer is: ' + exercise3(4));
+                </pre>
+                Resultado
+                <div>6-c the answer is: true</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

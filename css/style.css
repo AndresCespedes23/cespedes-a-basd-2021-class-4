@@ -1,0 +1,36 @@
+.container-javascript {
+    margin: 20px;
+    border: 1px solid black;
+}
+.ejercicio {
+    margin: 20px;
+    border: 1px solid red;
+}
+.ejercicio p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.ejercicio1 div {
+    margin: 20px;
+    border: 1px solid black;
+}
+.consigna {
+    margin: 20px;
+    border: 1px solid orange;
+}
+.consigna div {
+    margin: 20px;
+    border: 1px solid black;
+}
+.exercise4-b div {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+.array div {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}

@@ -4,7 +4,7 @@ if (Math.random() >= 0.5) {
 } else {
     console.log('Lower than 0,5');
 }
-/*2) Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:
+/*b) Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:
 i) “Bebe” si la edad es menor a 2 años;
 ii) “Nino” si la edad es entre 2 y 12 años;
 iii) “Adolescente” entre 13 y 19 años;
